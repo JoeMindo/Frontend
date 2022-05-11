@@ -1,45 +1,48 @@
+.navbar {
+  width: 100%;
+}
+.logo {
+  width: 80px;
+  height: 80px;
+}
+.imagecontainer {
+  width: 100%;
+}
 .topbar {
   background-color: #FF9900;
-  display: flex;
-  max-width: 1920px;
-  min-width: none;
+  display: block;
   height: 3rem;
-
+  min-width: 1000px;
 }
 .bottombar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  max-width: 1920px;
-  justify-items: left;
+  max-width: auto;
 }
+
 .navbarbrand {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 0;
-}
-.title {
-  font-size: 2rem;
-  color: #6B952C;
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
-}
-.search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  max-width: fit-content;
+  padding: 0 0.75rem;
   
 }
-.userActions {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  font-family: 'Montserrat', sans-serif;
-  padding-right: 2%;
+.logo {
+  height: 80px;
+  width: 80px;
+  
 }
+.hamburger {
+  padding: 0 0.75rem;
+}
+
+.userActions, .navbarbrand  > .title {
+  display: none;
+  
+}
+.search {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  width: 80%;
+}
+
 .link{
   color: #000;
   padding: 0 0.75rem;
@@ -50,3 +53,47 @@
   display: flex;
 }
 
+@media only screen  and (min-width: 768px) {
+  .navbarbrand {
+    display: flex;
+    padding: 0.75rem;
+  }
+}
+@media only screen  and (min-width: 992px) {
+  .userActions {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    justify-items: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0.75rem;
+  }
+  .userActions > * {
+    padding-top: 2rem;
+  }
+  .navbarbrand {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  .navbarbrand > .title {
+    display: flex;
+    font-size: 2rem;
+    color: #6B952C;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0.75rem;
+  }
+  .logo {
+    object-fit: contain;
+    width: 180px;
+    height: 180px;
+  }
+  
+  
+  .hamburger {
+    display: none;
+  }
+  
+  
+}
