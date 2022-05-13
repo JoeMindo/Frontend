@@ -5,7 +5,7 @@
     .sidebar {
         display: flex;
         padding: 1.75rem;
-        width: 75%;
+        width: 100%;
         height: fit-content;
         flex-direction: column;
         margin-right: 0;
