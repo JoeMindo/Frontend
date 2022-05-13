@@ -1,0 +1,12 @@
+.sidebar {
+    display: none;
+}
+@media only screen and (min-width: 992px) {
+    .sidebar {
+        display: flex;
+        padding: 1.75rem;
+        width: 75%;
+        height: fit-content;
+        flex-direction: column;
+    }
+}

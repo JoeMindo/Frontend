@@ -1,0 +1,25 @@
+.shoppingHeading > * {
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.shoppingHeading {
+    display: flex;
+    width: fit-content;
+    margin-top: 1vh;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.shoppingHeading > h2 {
+    padding-right: 1rem;
+}
+.cartCount {
+    color: #fff;
+    margin-top: 1vh;
+}
+.cartItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1vh;
+    font-family: 'Montserrat', sans-serif;
+}
