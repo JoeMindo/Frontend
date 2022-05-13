@@ -1,0 +1,29 @@
+.categoryButton {
+    border: hidden;
+    margin-right: 4rem;
+}
+
+.categoryButton:active,
+.categoryButton:focus {
+    opacity: 1;
+    border: 1px solid #FF9900;
+    border-radius: 34px;
+
+}
+.categoryPicker {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Montserrat', sans-serif;
+}
+.dropdown {
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+    .dropdown {
+        display: flex;
+        color: #000;
+        padding-top: 0.5rem;
+    }
+}
