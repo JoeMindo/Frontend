@@ -22,14 +22,16 @@ export const Main = () => {
                         <BestOf type={'corn'} />
                         <BestOf type={'corn'} />
                         <BestOf type={'corn'} />
-                        <BestOf type={'corn'}/>
+                        <BestOf type={'corn'} />
+                        
                     </section>
+                    
                     <section className={styles.recommendations}>
-                        <h2>Selected by us for you</h2>
-                        {/* <ProductItem />
+                    <h2>Selected by us for you</h2>
                         <ProductItem />
                         <ProductItem />
-                        <ProductItem/> */}
+                        <ProductItem />
+                        <ProductItem/>
                     </section>
                     
                 </Col>
